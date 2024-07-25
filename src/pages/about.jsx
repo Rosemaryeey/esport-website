@@ -117,30 +117,40 @@ function About() {
     >
       {/* Hero Section */}
 
-      <section className=" w-[93%] h-[250vh]">
-        <div className="flex justify-center items-center relative h-[170vh]">
-          <div className="h-[10vh] w-[37vw]    ">
+      <section className=" w-[100%] h-[250vh] md:flex hidden">
+        <div className="flex justify-center items-center relative h-[170vh] md:h-[150vh] ">
+          <div className="h-[10vh] w-[37vw] pl-10  space-y-7  ">
             <p
-              className="text-[76px] leading-[77px] font-bold z-30 absolute  
-            w-[49vw] top-[32%]"
+              className="xl:text-[76px] lg:text-[70px] text-[65px] leading-[77px] font-bold z-30 absolute  
+            xl:w-[49vw] lg:w-[60vw] w-[60vw] top-[32%] "
             >
               ABOUT DRAGON ESPORTS TEAM
             </p>
-            <p className="text-2xl w-[33vw] h-[18vh] ">
+            <p
+              className="xl:text-2xl text-2xl xl:w-[33vw] 
+            md:w-[45vw] h-fit z-30 relative  "
+            >
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quis
               odio vestibulum nunc, neque integer purus.
             </p>
-            <button className="button btn-p h-[13vh] w-[17vw]">
+            <button className="button  bg-[#f32c46] btn-p h-[13vh] w-[20vw]">
               MEET THE TEAM
             </button>
           </div>
-          <div className=" ">
-            <img src={Gun} className="w-[88vw] h-[120vh] " />
+          <div className="relative w-[60vw] border-2 ">
+            <div className="bg-[#11161e] h-[80vh] w-[50vw]  "></div>
+            <img
+              src={Gun}
+              className="w-[55vw] absolute z-10 h-[120vh] bottom-[7%] md:bottom-[-15%] left-[9%] object-cover md:object-contain "
+            />
           </div>
         </div>
-        <div className="flex justify-center items-center w-full h-[40vh]">
-          <p className="w-[30vw] font-semibold text-xl">OUR RESULTS</p>
-          <div className="flex justify-between items-center w-[60vw]">
+
+        <div className="flex xl:justify-center justify-around items-center w-full h-[40vh] border-2">
+          <p className="xl:w-[30vw] lg:w-[20vw]  font-semibold text-xl">
+            OUR RESULTS
+          </p>
+          <div className="flex justify-between items-center xl:w-[60vw] lg:w-[70vw] w-[70vw]">
             <Results num="35" text="TOURNAMENTS" />
             <Results num="20" text="GLOBAL AWARDS" />
             <Results num="14" text="TEAM MEMBERS" />
@@ -149,25 +159,27 @@ function About() {
         </div>
         <div className=" border-b-2 border-gray-700 w-full h-[5vh]"></div>
       </section>
+
+
       <section className="flex justify-center items-center w-[100%] h-[169vh]">
         <div className="w-[50vw] relative">
-          <div className="w-[47vw] h-[80vh] bg-[#11161e] "></div>
+          <div className="w-[55vw] h-[80vh] bg-[#11161e] "></div>
           <img
             src={Headset}
             className="w-[43vw] absolute z-30 bottom-[7%] left-[-2%]"
           />
         </div>
-        <div className="h-[140vh]">
-          <div className="w-[38vw] h-[65vh]  ">
-            <p className="text-[8vh] w-[38vw] leading-[56px]  font-bold h-[20vh] ">
+        <div className="h-[140vh] space-y-10 ">
+          <div className="w-[40vw] h-fit space-y-10  ">
+            <p className="text-[8vh] w-[38vw] leading-[56px]  font-bold h-fit z-30 relative  ">
               THE STORY BEHIND DRAGON TEAM
             </p>
-            <p className="w-[37vw] text-lg h-[18vh]">
+            <p className="w-[37vw]  text-lg h-[18vh] z-30 relative">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
               convallis tortor, malesuada vitae tortor. Dignissim ac aliquam ut
               sed eu. Eget nulla elit, ac habitant
             </p>
-            <button className="button btn-p h-[13vh] w-[17vw]">
+            <button className="button bg-[#f32c46] btn-p h-[13vh] w-[20vw]">
               MEET THE TEAM
             </button>
           </div>
@@ -177,7 +189,7 @@ function About() {
         </div>
       </section>
       <section className="h-[190vh] flex justify-center items-center">
-        <div className="">
+        <div className=" h-fit space-y-20 border-2">
           <p className="text-[8vh] w-[38vw] leading-[56px] h-[18vh]  font-bold">
             HOW DRAGON ESPORTS STARTED
           </p>
@@ -195,11 +207,11 @@ function About() {
           <div className="bg-[#11161e] h-[80vh] w-[50vw]"></div>
           <img
             src={Work}
-            className="absolute bottom-48 h-[74vh] w-[35vw] right-0"
+            className=" object-contain absolute bottom-48 h-[74vh] w-[35vw] right-0"
           />
           <img
             src={Game}
-            className="absolute bottom-[-27%] w-[33vw] h-[90vh] left-16"
+            className=" object-contain absolute bottom-[-27%] w-[33vw] h-[90vh] left-16"
           />
         </div>
       </section>
@@ -211,7 +223,7 @@ function About() {
           className="flex justify-center items-center flex-col text-center z-30 bottom-[37%]
         right-[5%] absolute"
         >
-          <p className="text-[8vh] w-[36vw] leading-[56px] h-[11vh]  font-bold">
+          <p className="text-[8vh] w-[36vw] leading-[56px] h-fit  font-bold">
             OUR AWARDS
           </p>
           <p className="text-lg w-[55vw] h-[14vh]">
@@ -236,7 +248,7 @@ function About() {
               gravida platea congue. Gravida viverra id ac dui blandit in sed.
             </p>
           </div>
-          <button className="button btn-p h-[13vh] w-[17vw]">
+          <button className="button  bg-[#f32c46]   btn-p h-[13vh] w-[20vw]">
             BROWSE TEAM
           </button>
         </div>

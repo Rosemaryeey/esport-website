@@ -41,7 +41,7 @@ function header2() {
   return (
     <main
       className="w-[100%] md:h-[22vh] h-[19vh] flex justify-around items-center md:w-[100%]
-    md:text-[16.5px] text-[22px] font-serif fixed z-40 bg-[#04080f] font-bold border-2 "
+    md:text-[16.5px] text-[22px] font-serif fixed z-40 bg-[#04080f] font-bold  "
     >
       <div className="lg:w-[16vw] md:w-[29vw] w-[38vw] ">
         <img src={Logo} />
@@ -54,11 +54,11 @@ function header2() {
       >
         <div
           className="md:flex-row flex flex-col gap-7 md:gap-0  md:w-screen 
-        md:justify-evenly md:h-fit  h-[70vh] border-2 border-white "
+        md:justify-evenly md:h-fit  h-[70vh]  border-white "
         >
           <Nav1 text="HOME" source="/home" />
           <Nav1 text="ABOUT" source="/about" />
-          <Nav1 text="TEAM" source="/team" />
+          <Nav1 text="TEAM" source="/" />
           <Nav1 text="PARTNER" source="/partner" />
           <Nav1 text="SHOP" source="/shop" />
           <div className=" flex justify-between w-[31vw] md:w-fit items-center">
