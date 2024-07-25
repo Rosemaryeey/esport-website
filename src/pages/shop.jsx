@@ -3,14 +3,14 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-// import Polo from "../assets/polo.png";
-// import Polo2 from "../assets/polo2.png";
-// import Polo3 from "../assets/polo3.png";
-// import Polo4 from "../assets/polo4.png";
-// import Cap1 from "../assets/cap1.png";
-// import Cap2 from "../assets/cap2.png";
-// import Bag1 from "../assets/bag1.png";
-// import Bag2 from "../assets/bag2.png";
+import Polo from "../assets/polo.png";
+import Polo2 from "../assets/polo2.png";
+import Polo3 from "../assets/polo3.png";
+import Polo4 from "../assets/polo4.png";
+import Cap1 from "../assets/cap1.png";
+import Cap2 from "../assets/cap2.png";
+import Bag1 from "../assets/bag1.png";
+import Bag2 from "../assets/bag2.png";
 
 function Shop() {
   return (

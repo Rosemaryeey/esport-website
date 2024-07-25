@@ -1,25 +1,25 @@
 import React, { useState } from "react";
 
-// import Gun from "/gun.jpeg";
-// import Man from "/systemman.jpeg";
-// import Headset from "/headset.jpeg";
-// import Game from "/gamepad.jpg";
-// import Work from "/work.jpeg";
-// import first from "/first.svg";
-// import second from "/second.svg";
-// import John from "/John.png";
-// import Dan from "/Dan Clark.png";
-// import Cannon from "/Cannon.png";
-// import John2 from "/John2.jpg";
-// import Dan2 from "/Dan Clark2.jpg";
-// import Cannon2 from "/Cannon2.jpg";
+import Gun from "/gun.jpeg";
+import Man from "/systemman.jpeg";
+import Headset from "/headset.jpeg";
+import Game from "/gamepad.jpg";
+import Work from "/work.jpeg";
+import first from "/first.svg";
+import second from "/second.svg";
+import John from "/John.png";
+import Dan from "/Dan Clark.png";
+import Cannon from "/Cannon.png";
+import John2 from "/John2.jpg";
+import Dan2 from "/Dan Clark2.jpg";
+import Cannon2 from "/Cannon2.jpg";
 import { IoLogoTwitch } from "react-icons/io5";
 import { TiSocialFacebook } from "react-icons/ti";
 import { FaInstagram, FaYoutube } from "react-icons/fa";
-// import Pad from "/Pad.jpg";
-// import Speakers from "/speakers.jpg";
-// import Speaker from "/speaker.jpg";
-// import War from "/war.jpg";
+import Pad from "/Pad.jpg";
+import Speakers from "/speakers.jpg";
+import Speaker from "/speaker.jpg";
+import War from "/war.jpg";
 
 const Results = ({ num, text }) => (
   <div>
