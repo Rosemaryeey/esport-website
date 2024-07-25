@@ -9,7 +9,8 @@ import About from "./pages/about";
 import Team from "./pages/team";
 import Pages from "./pages/pages";
 import Partner from "./pages/partner";
-import Shop from "./pages/shop";
+// import Shop from "./pages/shop";
+
 import { useState } from "react";
 import { Context } from "./components/Context";
 
@@ -27,7 +28,7 @@ function App() {
         <Route path="/team" element={<Team />} />
         <Route path="/pages" element={<Pages />} />
         <Route path="/partner" element={<Partner />} />
-        <Route path="/shop" element={<Shop />} />
+        {/* <Route path="/shop" element={<Shop />} /> */}
       </Routes>
       <Footer />
     </div>

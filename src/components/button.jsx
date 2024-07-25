@@ -7,7 +7,7 @@ const Button = ({ text }) => {
     <button
       style={{
         fontFamily: " Barlow sans-serif",
-        fontFamily: "Chakra Petch sans-serif",
+        // fontFamily: "Chakra Petch sans-serif",
         textAlign: "center",
         letterSpacing: "0.04em",
         transformStyle: "preserve-3d",
