@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import About from "../assets/about.png";
 import Shop from "../assets/shop.png";
 import Team from "../assets/team.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const ScrollAnimatedBox = () => {
    useEffect(() => {

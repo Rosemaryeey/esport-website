@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import React from "react";
 import "./home.css";
-import Wo from "../assets/wo.jpeg";
-import Isi from "../assets/isi.svg";
-import Isi2 from "../assets/isi2.svg";
-import Band from "../assets/band.jpeg";
-import Button from "../components/button"
+// import Wo from "../assets/wo.jpeg";
+// import Isi from "../assets/isi.svg";
+// import Isi2 from "../assets/isi2.svg";
+// import Band from "../assets/band.jpeg";
+// import Button from "../components/button"
 
 const Home = () => {
   return (
