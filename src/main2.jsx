@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import ScrollAnimatedBox from "./components/scrollanimation";
 
@@ -29,12 +29,17 @@ import Aside5 from "./assets/aside5.png";
 import Pics from "./assets/pics.png";
 import Logo4 from "./assets/logo4.svg";
 import Button from "./components/button";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
-function Main2() {
+const Main2 = () => {
+  useEffect(() => {
+    Aos.init({ duration: 600, delay: 200 });
+  }, []);
   return (
     <main className=" flex items-center flex-col w-[100%]">
       {/* slide one  --------- */}
-      <div className="flex items-center justify-center flex-col md:w-[100%] w-[100%] xl:h-[100vh] lg:h-[100vh] sm:h-[100vh] h-[95vh]   ">
+      <div className="flex items-center justify-center flex-col md:w-[100%] w-[100%] xl:h-[100vh] lg:h-[100vh] sm:h-fit h-fit   ">
         <div className="xl:w-[90vw] w-[95vw] h-[90vh] flex items-end justify-center   ">
           <div
             className="xl:h-[80vh] xl:w-[90vw] w-[95vw] 
@@ -57,7 +62,10 @@ function Main2() {
               >
                 <span className="xl:block lg:flex items-center justify-center md:block  ">
                   ESPORTS
-                  <span className=" xl:inline sm:block inline "> X</span>
+                  <span className=" xl:inline lg:inline md:inline sm:block inline ">
+                    {" "}
+                    X
+                  </span>
                 </span>
                 <span> WEBFLOW TEMPLATE</span>
               </h1>
@@ -93,7 +101,7 @@ function Main2() {
       </div>
 
       {/* ------------slide two */}
-      <div className="flex items-center justify-evenly  w-[100%] xl:h-[100vh] sm:h-[80vh] h-[40vh] ">
+      <div className="flex items-center justify-evenly  two  w-[100%] xl:h-[120vh]  sm:h-[80vh] h-[100vh] border-2">
         <ScrollAnimatedBox />
       </div>
 
@@ -102,22 +110,24 @@ function Main2() {
         style={{
           display: "flex",
           flexDirection: "column",
-          justifyContent: "end",
+          justifyContent: "start",
           alignItems: "center",
           width: "100%",
         }}
-        className=" xl:h-[320vh] lg:h-[280vh] md:h-[210vh] lg:flex-wrap lg:space-around   sm:h-[250vh] h-[520vh]     "
+        className=" h-fit flex  flex-wrap lg:space-around space-y-10        "
       >
-        <div className="xl:h-[50vh] md:h-[] h-[60vh]   flex  items-end justify-center ">
-          <div className=" xl:h-[20vh]  flex flex-col items-center justify-around ">
+        <div className="xl:h-[50vh] md:h-[] h-[50vh]   flex  md:items-center items-end justify-center ">
+          <div className=" xl:h-[20vh]   h-[20vh] flex flex-col items-center justify-around ">
             <h1
               style={{
                 textAlign: "center",
                 lineHeight: "1",
               }}
               className=" xl:w-[95vw] w-[]
-            xl:text-[3.5rem] lg:text-[3rem] md:text-[2.5rem] sm:text-[2.2rem] text-[2.2rem]  md:px-0 px-2 md:mb-0 mb-2
-             font-bold   "
+            xl:text-[3.5rem] lg:text-[3rem] md:text-[3rem] sm:text-[2.2rem] text-[2.2rem]  md:px-0 px-2 md:mb-0 mb-2
+             font-bold    "
+              data-aos="fade-up"
+              
             >
               WHAT IS INCLUDED IN ESPORTS X
             </h1>
@@ -125,7 +135,8 @@ function Main2() {
               style={{
                 textAlign: "center",
               }}
-              className=" text-[18px] font-[300] xl:w-[60vw] text-white/50 "
+              data-aos="fade-up"
+              className=" text-[18px] font-[300] xl:w-[60vw] text-white/50    "
             >
               eSports X Webflow Template includes over 15 pages in total,and
               with more than 35 sections.
@@ -137,18 +148,25 @@ function Main2() {
           //   width:"95vw"
           // }}
           className="
-    xl:w-[95vw] xl:h-[75vh] 
-    lg:w-[95vw] lg:h-[70vh]
-    md:w-[95vw] md:h-[65vh]
-    sm:w-[90vw] w-[90vw] sm:h-[300vh] h-[180vh]
+    xl:w-[95vw] h-fit
+    lg:w-[95vw] 
+    md:w-[95vw] 
+    sm:w-[90vw] w-[90vw] 
+     lg:space-y-0 space-y-10 
+     sm:space-y-5
    
     flex
-    xl:flex-row lg:flex-row md:flex-row sm:flex-col flex-col
+    xl:flex-row lg:flex-row md:flex-col sm:flex-col flex-col
     items-center justify-around 
   "
+          data-aos="fade-up"
         >
-          <div>
-            <img className="box" src={Box3} alt="" />
+          <div className="">
+            <img
+              className="box xl:w-[30vw] lg:w-[30vw] w-[90vw] lg:object-contain lg:h-fit h-[50vh] sm:object-contain object-contain"
+              src={Box3}
+              alt=""
+            />
             <div
               style={{
                 backgroundColor: "var(--neutral-700)",
@@ -159,13 +177,13 @@ function Main2() {
               className="
         xl:font-[700] xl:text-[21px] xl:py-6 xl:px-0
        
-        md:font-[700] font-[700] sm:text-[20px] text-[25px]  sm:py-6 py-6 sm:px-0
+        md:font-[700] font-[700] md:text-[25px] text-[20px]  sm:py-6 py-6 sm:px-0
         
       "
             >
               <span
                 style={{ color: "var(--primary-1)" }}
-                className="xl:pr-2 lg:pr-2 md:pr-1 sm:pr-1 xs:pr-1"
+                className="xl:pr-2 lg:pr-2 md:pr-1  "
               >
                 15+
               </span>
@@ -173,7 +191,11 @@ function Main2() {
             </div>
           </div>
           <div>
-            <img className="box" src={Box2} alt="" />
+            <img
+              className="box xl:w-[30vw] lg:w-[30vw] w-[90vw] lg:object-contain  sm:object-contain object-contain lg:h-fit h-[50vh]"
+              src={Box2}
+              alt=""
+            />
             <div
               style={{
                 backgroundColor: "var(--neutral-700)",
@@ -183,9 +205,9 @@ function Main2() {
               }}
               className="
       
-        xl:font-[700] xl:text-[21px] xl:py-6 xl:px-0
+              xl:font-[700] xl:text-[21px] xl:py-6 xl:px-0
        
-        md:font-[700] font-[700] sm:text-[20px] text-[25px]  sm:py-6 py-6 sm:px-0
+            md:font-[700] font-[700] md:text-[25px] text-[20px] sm:py-6 py-6 sm:px-0
       
       "
             >
@@ -200,7 +222,11 @@ function Main2() {
           </div>
           <div>
             <div>
-              <img className="box" src={Box1} alt="" />
+              <img
+                className="box xl:w-[30vw] lg:w-[30vw] w-[90vw] lg:object-contain  sm:object-contain object-contain lg:h-fit h-[50vh]"
+                src={Box1}
+                alt=""
+              />
             </div>
             <div
               style={{
@@ -212,7 +238,7 @@ function Main2() {
               className="
         xl:font-[700] xl:text-[21px] xl:py-6 xl:px-0
        
-        md:font-[700] font-[700] sm:text-[20px] text-[25px]  sm:py-6 py-6 sm:px-0
+        md:font-[700] font-[700] md:text-[25px] text-[20px] sm:py-6 py-6 sm:px-0
         "
             >
               <span
@@ -228,8 +254,11 @@ function Main2() {
           </div>
         </div>
 
-        <div className=" sec ">
-          <div className=" in bg-[#11161e]  py-5 px-14  flex items-center justify-center">
+        <div className=" sec " data-aos="fade-up">
+          <div
+            className=" in bg-[#11161e]  py-5 px-14  flex items-center justify-center"
+            // data-aos="fade-up"
+          >
             <div className="h-[60vh] flex flex-col items-start justify-around">
               <img src={Logo2} alt="" />
               <h1 className="  num ">FIGMA FILE INCLUDED</h1>
@@ -245,7 +274,7 @@ function Main2() {
           <img className=" ig object-cover " src={Side} alt="" />
         </div>
 
-        <div className=" sec1 ">
+        <div className=" sec1 " data-aos="fade-up">
           <img className="ig  object-cover " src={Side2} alt="" />
           <div className="in   pd flex items-center justify-center">
             <div className="h-[60vh] flex flex-col items-start justify-around ">
@@ -266,229 +295,292 @@ function Main2() {
           {/* <Link className="hm border-2  border-[#f32c46] bg-[#f32c46]">
             BUY TEMPLATE
           </Link> */}
-          <div className="mt-5">
+          <div className="mt-5" data-aos="fade-up">
             <Button text="BUY TEMPLATE" />
           </div>
         </div>
       </div>
       {/* --------------------slide four */}
-      <div className=" is  three">
-        <div className=" h2">
+      <div
+        style={{
+          width: "100%",
+          display: " flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "start",
+        }}
+        className=" h-fit three "
+      >
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "end",
+            alignItems: "center",
+            width: "95vw",
+          }}
+          className=" xl:h-[40vh] lg:h-[20vh] md:h-[35vh] sm:h-[40vh] h-[30vh] "
+        >
           <div className="  flex flex-col items-center justify-around h-[20vh]   py-3">
-            <h1 className="font-bold px-10  text-[2.2rem] sm:text-2xl md:text-3xl lg:text-4xl ">
+            <h1
+              className="font-bold px-10  text-[2rem] sm:text-5xl md:text-5xl lg:text-5xl xl:text-5xl "
+              data-aos="fade-up"
+            >
               MAIN PAGE
             </h1>
-            <p className="font-medium text-[1.08rem] sm:text-lg md:text-xl lg:text-2xl text-center">
+            <p
+              data-aos="fade-up"
+              className="font-medium text-base sm:text-base md:text-lg lg:text-xl text-center"
+            >
               Take a look at the main pages included in the eSports X Template.
             </p>
           </div>
         </div>
-        <div className=" ">
+        <div className=" h-fit ">
           <div className="bo">
-            <Link className="bo1">
+            <Link data-aos="fade-up" className="bo1">
               <img className="h-[50vh]  i" src={Home} alt="" />
               <div className="box3 nm  o"> HOME</div>
             </Link>
-            <Link className="bo2">
+            <Link data-aos="fade-up" className="bo2">
               <img className="h-[50vh] i " src={About} alt="" />
               <div className="box3 nm "> ABOUT</div>
             </Link>{" "}
-            <Link className="bo3">
+            <Link data-aos="fade-up" className="bo3">
               {" "}
               <img className="md:h-[50vh] i  " src={Contact} alt="" />
               <div className=" nm box3 "> CONTACT</div>
             </Link>
-            <Link className="bo4">
+            <Link data-aos="fade-up" className="bo4">
               <img className="h-[50vh] i" src={Team} alt="" />
               <div className="box3 nm ">Team </div>
             </Link>
-            <Link className="bo5">
+            <Link data-aos="fade-up" className="bo5">
               <img className="h-[50vh] i" src={Product} alt="" />
               <div className="box3 nm ">SINGLE PRODUCT </div>
             </Link>
-            <Link className="bo6">
+            <Link data-aos="fade-up" className="bo6">
               <img className="h-[50vh] i" src={Blog} alt="" />
               <div className="box3 nm "> BLOG</div>
             </Link>
-            <Link className="bo7">
+            <Link data-aos="fade-up" className="bo7">
               <img className="h-[50vh] i" src={Post} alt="" />
               <div className="box3 nm "> BLOG POST</div>
             </Link>
-            <Link className="bo8">
+            <Link data-aos="fade-up" className="bo8">
               <img className="h-[50vh] i" src={Single} alt="" />
               <div className="box3 nm ">TEAM SINGLE </div>
             </Link>
-            <Link className="bo9">
+            <Link data-aos="fade-up" className="bo9">
               <img className="h-[50vh] i" src={Shop} alt="" />
               <div className="box3 nm ">SHOP </div>
             </Link>
-            <Link className="bo10">
+            <Link data-aos="fade-up" className="bo10">
               <img className="h-[50vh] i" src={Sponsors} alt="" />
               <div className="box3 nm ">SPONSORS </div>
             </Link>
           </div>
         </div>
-        <div className=" hi">
+        <div data-aos="fade-up" className=" h-[20vh]  flex items-start">
           <Button text="BUY TEMPLATE" />
         </div>
       </div>
 
       {/* -------------------SLIDE FIVE */}
-      <div className="md:h-[100vh] h-[150vh] w-[95vw] flex flex-col items-center justify-center">
-        <div className="md:h-[100vh] h-[170vh] flex flex-col items-center justify-evenly w-full sm:w-[90vw] md:w-[85vw] lg:w-[80vw] xl:w-[70vw] border-red-600">
-          <div className=" text-center md:text-left pt-20">
-            <h1 className="font-bold px-10  pb-2 text-[2.2rem] sm:text-2xl md:text-3xl lg:text-4xl ">
+      <div className="h-auto w-[95vw] flex flex-col items-center justify-center">
+        <div className="h-fit md:mb-40 mb-10  flex flex-col items-center justify-evenly w-full sm:w-[90vw] md:w-[85vw] lg:w-[80vw] xl:w-[70vw]">
+          <div className=" text-center md:text-center pt-20 pb-10">
+            <h1
+              data-aos="fade-up"
+              className="font-bold px-10  pb-2 text-[2.2rem] sm:text-4xl md:text-4xl  lg:text-[3rem] xl:text-[3.2rem] "
+            >
               UTILITY PAGES
             </h1>
-            <p className="font-medium text-[1.08rem] sm:text-lg md:text-xl lg:text-2xl">
+            <p
+              data-aos="fade-up"
+              className="font-medium text-[1.08rem] sm:text-sm md:text-base xl:text-base"
+            >
               Take a look at the utility pages included in the eSports X
               Template.
             </p>
           </div>
 
-          <div className="md:h-[100vh] h-[100vh] w-full flex flex-wrap justify-center gap-10">
-            <div className="flex flex-col items-center">
+          <div className=" w-[95vw] flex flex-wrap justify-center gap-10 ">
+            <div data-aos="fade-up" className="flex flex-col items-center  ">
               <img
-                className="box w-[80vw] sm:w-[60vw] md:w-[45vw] lg:w-[30vw] xl:w-[20vw]"
+                className=" box w-[80vw] sm:w-[90vw] md:w-[40vw] lg:w-[40vw] xl:w-[40vw]  "
                 src={P404}
                 alt="404 Not Found"
               />
-              <p className="num box2 text-center text-base sm:text-lg md:text-xl lg:text-2xl mt-4">
+              <p
+                style={{
+                  backgroundColor: "var(--secondary-1)",
+                  fontWeight: "700",
+                  fontFamily: "Chakra Petch, sans-serif",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+                className="  xl:text-[30px] xl:py-6 xl:px-[12vw] lg:px-[11vw] md:px-[9vw] sm:px-[33vw] px-[25vw] 
+       
+                 md:text-[25px] sm:text-[19px] text-[15px]  sm:py-6 py-6 
+                 "
+              >
                 404 NOT FOUND
               </p>
             </div>
-            <div className="flex flex-col items-center">
+            <div
+              data-aos="fade-up"
+              className="flex flex-col items-center h-fit w-auto "
+            >
               <img
-                className="box w-[80vw] sm:w-[60vw] md:w-[45vw] lg:w-[30vw] xl:w-[20vw]"
+                className="box w-[80vw] sm:w-[90vw] md:w-[40vw] lg:w-[40vw] xl:w-[40vw] "
                 src={Protected}
                 alt="Protected Page"
               />
-              <p className="num box2 text-center text-base sm:text-lg md:text-xl lg:text-2xl mt-4">
+              <p
+                style={{
+                  backgroundColor: "var(--secondary-1)",
+                  fontWeight: "700",
+                  fontFamily: "Chakra Petch, sans-serif",
+                }}
+                className="  xl:text-[30px] xl:py-6 xl:px-[10.5vw] lg:px-[10vw] md:px-[7vw] sm:px-[33vw] px-[25vw] 
+       
+                 md:text-[25px] sm:text-[19px] text-[14px]  sm:py-6 py-6 
+                 "
+              >
                 PROTECTED PAGE
               </p>
             </div>
           </div>
 
-          <div className="pb-10 ">
+          <div data-aos="fade-up" className="pt-10  ">
             <Button text="BUY TEMPLATE" />
           </div>
         </div>
       </div>
 
       {/* second to the last .................. */}
-      <div className="three  w-full flex flex-col items-center justify-around space-y-10 sm:w-[95vw] md:w-[95vw] lg:w-[90vw] xl:w-[70vw]">
-        <div className="h2 h-[50vh] w-[95vw]">
-          <h1 className="h text-4xl px-2 sm:text-4xl md:text-5xl lg:text-6xl font-bold pb-10 text-center sm:text-left">
+      <div className="three  w-full flex flex-col items-center justify-around space-y-10 ">
+        <div className="h2 h-[50vh]  w-[95vw]">
+          <h1
+            data-aos="fade-up"
+            className=" text-3xl px-2 sm:text-3xl md:text-4xl xl:text-[3.2rem] font-bold pb-10 text-center  "
+          >
             THE ESPORTS X WEBFLOW TEMPLATE ALSO COMES WITH MORE SURPRISES...
           </h1>
         </div>
-
-        <div className="sec flex flex-col items-center w-full sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[45vw]">
-          <div className="ini flex items-center justify-center w-full">
-            <div className="ohi b md:py-5 md:px-5">
-              <h1 className="num text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center sm:text-left">
+        <div className="sec flex lg:flex-row md:flex-row flex-col items-center w-full sm:w-[90vw] md:w-[90vw]  xl:w-[90vw]  h-fit">
+          <div className=" flex items-center justify-center w-full ">
+            <div data-aos="fade-up" className="ohi  ">
+              <h1 className="num text-xl sm:text-2xl md:text-3xl xl:text-3xl text-center sm:text-left ">
                 3 HEADERS AND FOOTERS
               </h1>
-              <p className="text-[1.1rem] sm:text-base md:text-lg lg:text-xl text-center sm:text-left">
+              <p
+                className="text-sm sm:text-base md:text-lg lg:text-xl text-center 
+           md:text-left xl:text-left lg:text-left   "
+              >
                 With a total of 3 different headers and footers, you can easily
                 customize the eSports X Webflow Template to fit your company
                 needs and requirements.
               </p>
-              <Link className="hm border-2 border-[#f32c46] bg-[#f32c46] block text-center mt-5 text-base sm:text-lg md:text-xl lg:text-2xl">
-                BUY TEMPLATE
-              </Link>
+              <Button text=" BUY TEMPLATE" />
             </div>
           </div>
-          <img className="ig0 mt-5" src={Aside} alt="" />
+          <img data-aos="fade-up" className="ig0 " src={Aside} alt="" />
         </div>
-
-        <div className="sec1 flex flex-col items-center w-full sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[45vw]">
-          <img className="ig0 mb-5" src={Aside2} alt="" />
-          <div className="ini flex items-center justify-center w-full">
-            <div className="ohi md:py-5 md:pl-12">
+        <div className="sec1 flex lg:flex-row md:flex-row flex-col items-center w-full sm:w-[90vw] md:w-[90vw]  xl:w-[90vw] h-fit">
+          <img data-aos="fade-up" className="ig0 " src={Aside2} alt="" />
+          <div className=" flex items-center justify-center w-full">
+            <div data-aos="fade-up" className="ohi md:py-5 md:pl-12">
               <h1 className="num text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center sm:text-left">
                 3 NOTIFICATION BARS
               </h1>
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-center sm:text-left">
+              <p
+                className="text-sm sm:text-base md:text-lg lg:text-xl 
+             text-center 
+           md:text-left xl:text-left lg:text-left "
+              >
                 If you are looking to get more sales, use one of our 3
                 notification bars included in the eSports X Webflow Template,
                 and start promoting your products or services.
               </p>
-              <Link className="hm border-2 border-[#f32c46] bg-[#f32c46] block text-center mt-5 text-base sm:text-lg md:text-xl lg:text-2xl">
-                BUY TEMPLATE
-              </Link>
+              <Button text="   BUY TEMPLATE" />
             </div>
           </div>
         </div>
-
-        <div className="sec flex flex-col items-center w-full sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[45vw]">
+        <div className="sec flex lg:flex-row md:flex-row flex-col items-center w-full sm:w-[90vw] md:w-[90vw]  xl:w-[90vw] h-fit">
           <div className="ini flex items-center justify-center w-full">
-            <div className="ohi py-5 px-5">
+            <div data-aos="fade-up" className="ohi py-5 px-5">
               <h1 className="num text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center sm:text-left">
                 CUSTOM ICON SET
               </h1>
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-center sm:text-left">
+              <p
+                className="text-sm sm:text-base md:text-lg lg:text-xl text-center 
+          md:text-left xl:text-left lg:text-left "
+              >
                 The eSports X Webflow Template includes 3 sets of custom icons
                 (rounded, square and filled), so you can easily use more icon
                 fonts in your template. No matter if you are looking to add
                 another social media icon in the footer, or change the cart icon
                 in the header, we got you covered.
               </p>
-              <Link className="hm border-2 border-[#f32c46] bg-[#f32c46] block text-center mt-5 text-base sm:text-lg md:text-xl lg:text-2xl">
-                BUY TEMPLATE
-              </Link>
+              <Button text="   BUY TEMPLATE" />
             </div>
           </div>
-          <img className="ig0 mt-5" src={Aside3} alt="" />
+          <img data-aos="fade-up" className="ig0 " src={Aside3} alt="" />
         </div>
-
-        <div className="sec1 flex flex-col items-center w-full sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[45vw]">
-          <img className="ig0 mb-5" src={Aside4} alt="" />
+        <div className="sec1 flex lg:flex-row md:flex-row flex-col items-center w-full sm:w-[90vw] md:w-[90vw]  xl:w-[90vw] h-fit">
+          <img data-aos="fade-up" className="ig0 " src={Aside4} alt="" />
           <div className="ini flex items-center justify-center w-full">
-            <div className="ohi md:py-5 md:pl-12 ">
-              <h1 className="num text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center md:text-left ">
+            <div data-aos="fade-up" className="ohi md:py-5 md:pl-12 ">
+              <h1 className="num text-xl sm:text-2xl md:text-3xl lg:text-4xl text-centermd:text-center ">
                 3 NOTIFICATION BARS
               </h1>
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-center md:text-left  ">
+              <p
+                className="text-sm sm:text-base md:text-lg lg:text-xl text-center 
+          md:text-left xl:text-left lg:text-left  "
+              >
                 If you are looking to get more sales, use one of our 3
                 notification bars included in the eSports X Webflow Template,
                 and start promoting your products or services.
               </p>
-              <Link className="hm border-2 border-[#f32c46] bg-[#f32c46] block text-center mt-5 text-base sm:text-lg md:text-xl lg:text-2xl">
-                BUY TEMPLATE
-              </Link>
+              <Button text="   BUY TEMPLATE" />
             </div>
           </div>
         </div>
-
-        <div className="sec flex flex-col items-center w-full sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[45vw]">
+        <div className="sec flex lg:flex-row md:flex-row flex-col items-center w-full sm:w-[90vw] md:w-[90vw]  xl:w-[90vw] h-fit">
           <div className="ini flex items-center justify-center w-full">
-            <div className="ohi py-5 px-5">
+            <div data-aos="fade-up" className="ohi py-5 px-5">
               <h1 className="num text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center sm:text-left">
                 3 HEADERS AND FOOTERS
               </h1>
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-center sm:text-left">
+              <p
+                className="text-sm sm:text-base md:text-lg lg:text-xl text-center 
+           md:text-left xl:text-left lg:text-left "
+              >
                 With a total of 3 different headers and footers, you can easily
                 customize the eSports X Webflow Template to fit your company
                 needs and requirements.
               </p>
-              <Link className="hm border-2 border-[#f32c46] bg-[#f32c46] block text-center mt-5 text-base sm:text-lg md:text-xl lg:text-2xl">
-                BUY TEMPLATE
-              </Link>
+              <Button text="   BUY TEMPLATE" />
             </div>
           </div>
-          <img className="ig0 mt-5" src={Aside5} alt="" />
+          <img data-aos="fade-up" className="ig0 " src={Aside5} alt="" />
         </div>
       </div>
-
-      <div className=" md:flex-row flex-col flex items-center justify-center w-[95vw]  md:h-auto h-[220vh]">
-        <div className="md:w-[45vw] w-[90vw] h-auto flex flex-col justify-center items-center bg-blue-600 text-white ia mb-20 ">
-          <div className=" flex flex-col items-start justify-around md:w-[40vw] w-[80vw] pt-10">
+      {/* lastttttttttttttttttttttttttttttttt */}
+      <div className=" xl:flex-row lg:flex-row flex-col flex items-center justify-between w-[95vw]  lg:h-[150vh] h-[235vh]">
+        <div
+          data-aos="fade-up"
+          className="lg:w-[45vw] w-[90vw] h-auto flex flex-col justify-center items-center bg-blue-600 text-white ia mb-20 "
+        >
+          <div className=" flex flex-col items-start justify-around lg:w-[40vw] w-[80vw] pt-10 ">
             <img src={Logo4} alt="" />
-            <h2 className=" xl:text-6xl md:text-5xl text-xl font-[800] py-6">
+            <h2 className=" xl:text-3xl lg:text-3xl text-xl md:font-[500] font-[800] py-6">
               BUY NOW ON WEBFLOW
             </h2>
-            <p className="pb-10 text-[1.2rem] ">
+            <p className="pb-10 md:text-[1rem] text-[1.2rem] ">
               Get the ESport X Webflow Template Today, and take your Website
               design to next level.
             </p>
@@ -500,40 +592,47 @@ function Main2() {
             <div className=" mt-3">
               <img
                 src={Pics}
-                alt=""
-                className=" h-[50vh] object-cover   bg-center w-[100%]  "
+                alt
+                className=" h-[50vh] object-cover   bg-center w-[90vw]  "
               />
             </div>
           </div>
         </div>
-        <div className="md:w-[45vw] w-[90vw] h-auto flex flex-col justify-center items-center bg-slate-50 text-black ia">
-          <div className=" flex flex-col items-start justify-around md:w-[40vw] w-[80vw] py-10">
+        <div
+          data-aos="fade-up"
+          className="lg:w-[45vw] w-[90vw] h-auto flex flex-col justify-center items-center bg-slate-50 text-black ia  mb-20"
+        >
+          <div className=" flex flex-col items-start justify-around lg:w-[40vw] w-[80vw] py-12">
             <img
               src={Logo3}
               alt=""
               className="p-3 shadow-2xl shadow-black/20"
             />
-            <h2 className=" xl:text-6xl md:text-5xl text-[1.2rem] font-[800] text-black/60 py-6">
+            <h2 className=" xl:text-3xl md:text-3xl text-[1.2rem] md:font-[500] font-[800] text-black/60 py-6">
               BROWSE ALL TEMPLATES
             </h2>
-            <p className=" xl:text-6xl md:text-5xl text-[1rem] font-bold pb-10 text-black/50">
+            <p className=" pb-10 md:text-[1rem] text-[1.2rem] text-black/50">
               Looking for more template? Browse our collection of 100+ Webflow
               Templates on BRIXTemplate.com
             </p>
             <div>
-              <Link className=" py-5 px-10 text-center bg-blue-700 text-white">
+              <Link className=" py-6 px-10 text-center bg-blue-700 text-white">
                 EXPLORE MORE TEMPLATES
               </Link>
             </div>
           </div>
           <div>
-            <img src={Side2} alt="" className="" />
+            <img
+              src={Side2}
+              alt=""
+              className=" h-[50vh] object-cover   bg-center w-[90vw]    "
+            />
           </div>
         </div>
       </div>
     </main>
   );
-}
+};
 
 export default Main2;
 

@@ -1,23 +1,28 @@
-import React from "react";
+import {useEffect} from "react";
 import { Form, Link } from "react-router-dom";
 import Logo from "../assets/logo.svg";
 import "./footer.css";
 import {BiLogoFacebook,} from "react-icons/bi";
 import { FaTiktok, FaTwitch,FaYoutube,FaTwitter } from "react-icons/fa";
 import { BsInstagram,} from "react-icons/bs"
+import Aos from "aos";
+import "aos/dist/aos.css";
 
-function Footer() {
+const Footer = () =>{
+   useEffect(() => {
+     Aos.init({ duration: 600, delay: 200 });
+   }, []);
   return (
-    <footer className=" foot  one ">
+    <footer data-aos="fade-up" className=" foot  one ">
       <section className="h0">
-        <div className=" he ">
+        <div data-aos="fade-up" className=" he ">
           <img className="logo " src={Logo} alt="" />
           <p className=" text-white/50 ">
             Lorem ipsum dolor sit amet consectetur, <br />
             adipisicing elit. voluptatem!
           </p>
         </div>
-        <div className="g">
+        <div data-aos="fade-up" className="g">
           <div className="g1 grid  justify-items-start content-center ">
             <h1 className="text-[#f32c46] font-bold text-xl">PAGES</h1>
             <div className="grid md:grid-flow-col grid-flow-row justify-items-center content-center">
@@ -35,7 +40,10 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="g2 grid justify-items-start content-center">
+          <div
+            data-aos="fade-up"
+            className="g2 grid justify-items-start content-center"
+          >
             <h1 className="text-[#f32c46] font-bold text-xl ">UTILITY PAGES</h1>
             <div className=" w1 flex flex-col items-start justify-around   ">
               <Link className="shif">START HERE</Link>
@@ -48,7 +56,10 @@ function Footer() {
               </Link>
             </div>
           </div>
-          <div className="g3 grid justify-items-start content-center">
+          <div
+            data-aos="fade-up"
+            className="g3 grid justify-items-start content-center"
+          >
             <h1 className="text-[#f32c46] font-bold text-xl">FOLLOW US</h1>
             <div className=" flex flex-col items-start justify-around  w">
               <Link className=" shift flex items-center justify-around ">
@@ -93,8 +104,7 @@ function Footer() {
               </Link>
               <Link className=" shift flex items-center justify-around ">
                 <div className="icon w-[30px] h-[30px] bg-[#f32c46] flex items-center justify-center">
-                  <FaTiktok 
-                  className="text-xl" />
+                  <FaTiktok className="text-xl" />
                 </div>
                 <p className=" shift flex items-center justify-around px-3 ">
                   TICTOK
@@ -105,7 +115,10 @@ function Footer() {
         </div>
       </section>
 
-      <section className="  border-t-[1px] border-[#282d34] w-[95vw] flex items-center justify-center h-[15vh]">
+      <section
+        
+        className="  border-t-[1px] border-[#282d34] w-[95vw] flex items-center justify-center h-[15vh]"
+      >
         <p className=" md:font-bold font-normal md:text-xl text-sm">
           Copyright © eSports | Designed by <span>BRIX Templates</span> -
           Powered by <span>Webflow</span>

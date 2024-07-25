@@ -59,8 +59,8 @@ function header2() {
           <Nav1 text="HOME" source="/" />
           <Nav1 text="ABOUT" source="/" />
           <Nav1 text="TEAM" source="/" />
-          <Nav1 text="PARTNER" source="/partner" />
-          <Nav1 text="SHOP" source="/shop" />
+          <Nav1 text="PARTNER" source="/" />
+          <Nav1 text="SHOP" source="/" />
           <div className=" flex justify-between w-[31vw] md:w-fit items-center">
             <Nav1 text="PAGES" source="/pages" />
             <span
