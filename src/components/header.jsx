@@ -56,11 +56,19 @@ function header2() {
           className="md:flex-row flex flex-col gap-7 md:gap-0  md:w-screen 
         md:justify-evenly md:h-fit  h-[70vh]  border-white "
         >
+<<<<<<< HEAD
           <Nav1 text="HOME" source="/home" />
           <Nav1 text="ABOUT" source="/about" />
           <Nav1 text="TEAM" source="/" />
           <Nav1 text="PARTNER" source="/partner" />
           <Nav1 text="SHOP" source="/shop" />
+=======
+          <Nav1 text="HOME" source="/" />
+          <Nav1 text="ABOUT" source="/" />
+          <Nav1 text="TEAM" source="/" />
+          <Nav1 text="PARTNER" source="/" />
+          <Nav1 text="SHOP" source="/" />
+>>>>>>> 5870fa9fedbf89c43c842db52dfdc9f097d2501d
           <div className=" flex justify-between w-[31vw] md:w-fit items-center">
             <Nav1 text="PAGES" source="/pages" />
             <span
