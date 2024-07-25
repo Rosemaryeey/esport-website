@@ -62,14 +62,7 @@ const Main2 = () => {
               >
                 <span className="xl:block lg:flex items-center justify-center md:block  ">
                   ESPORTS
-<<<<<<< HEAD
                   <span className=" xl:inline lg:inline md:inline sm:block inline "> X</span>
-=======
-                  <span className=" xl:inline lg:inline md:inline sm:block inline ">
-                    {" "}
-                    X
-                  </span>
->>>>>>> 5870fa9fedbf89c43c842db52dfdc9f097d2501d
                 </span>
                 <span> WEBFLOW TEMPLATE</span>
               </h1>
@@ -118,11 +111,7 @@ const Main2 = () => {
           alignItems: "center",
           width: "100%",
         }}
-<<<<<<< HEAD
         className=" h-fit md: flex  flex-wrap lg:space-around    space-y-10        "
-=======
-        className=" h-fit flex  flex-wrap lg:space-around space-y-10        "
->>>>>>> 5870fa9fedbf89c43c842db52dfdc9f097d2501d
       >
         <div className="xl:h-[50vh] md:h-[] h-[50vh]   flex  md:items-center items-end justify-center ">
           <div className=" xl:h-[20vh]   h-[20vh] flex flex-col items-center justify-around ">
@@ -133,13 +122,7 @@ const Main2 = () => {
               }}
               className=" xl:w-[95vw] w-[]
             xl:text-[3.5rem] lg:text-[3rem] md:text-[3rem] sm:text-[2.2rem] text-[2.2rem]  md:px-0 px-2 md:mb-0 mb-2
-<<<<<<< HEAD
              font-bold   "
-=======
-             font-bold    "
-              data-aos="fade-up"
-              
->>>>>>> 5870fa9fedbf89c43c842db52dfdc9f097d2501d
             >
               WHAT IS INCLUDED IN ESPORTS X
             </h1>
@@ -147,10 +130,6 @@ const Main2 = () => {
               style={{
                 textAlign: "center",
               }}
-<<<<<<< HEAD
-=======
-              data-aos="fade-up"
->>>>>>> 5870fa9fedbf89c43c842db52dfdc9f097d2501d
               className=" text-[18px] font-[300] xl:w-[60vw] text-white/50    "
             >
               eSports X Webflow Template includes over 15 pages in total,and
@@ -168,28 +147,16 @@ const Main2 = () => {
     md:w-[95vw] 
     sm:w-[90vw] w-[90vw] 
      lg:space-y-0 space-y-10 
-<<<<<<< HEAD
    
     flex
     xl:flex-row lg:flex-row md:flex-col sm:flex-col flex-col
     items-center justify-around  
-=======
-     sm:space-y-5
-   
-    flex
-    xl:flex-row lg:flex-row md:flex-col sm:flex-col flex-col
-    items-center justify-around 
->>>>>>> 5870fa9fedbf89c43c842db52dfdc9f097d2501d
   "
           data-aos="fade-up"
         >
           <div className="">
             <img
-<<<<<<< HEAD
               className="box xl:w-[30vw] lg:w-[30vw] w-[90vw] lg:object-contain  object-fill lg:h-fit h-[90vh] sm:object-contain"
-=======
-              className="box xl:w-[30vw] lg:w-[30vw] w-[90vw] lg:object-contain lg:h-fit h-[50vh] sm:object-contain object-contain"
->>>>>>> 5870fa9fedbf89c43c842db52dfdc9f097d2501d
               src={Box3}
               alt=""
             />
@@ -218,11 +185,7 @@ const Main2 = () => {
           </div>
           <div>
             <img
-<<<<<<< HEAD
               className="box xl:w-[30vw] lg:w-[30vw] w-[90vw] lg:object-contain object-fill sm:object-contain lg:h-fit h-[90vh]"
-=======
-              className="box xl:w-[30vw] lg:w-[30vw] w-[90vw] lg:object-contain  sm:object-contain object-contain lg:h-fit h-[50vh]"
->>>>>>> 5870fa9fedbf89c43c842db52dfdc9f097d2501d
               src={Box2}
               alt=""
             />
@@ -253,11 +216,7 @@ const Main2 = () => {
           <div>
             <div>
               <img
-<<<<<<< HEAD
                 className="box xl:w-[30vw] lg:w-[30vw] w-[90vw] lg:object-contain object-fill sm:object-contain lg:h-fit h-[90vh]"
-=======
-                className="box xl:w-[30vw] lg:w-[30vw] w-[90vw] lg:object-contain  sm:object-contain object-contain lg:h-fit h-[50vh]"
->>>>>>> 5870fa9fedbf89c43c842db52dfdc9f097d2501d
                 src={Box1}
                 alt=""
               />
@@ -356,23 +315,10 @@ const Main2 = () => {
           className=" xl:h-[40vh] lg:h-[20vh] md:h-[35vh] sm:h-[40vh] h-[30vh] "
         >
           <div className="  flex flex-col items-center justify-around h-[20vh]   py-3">
-<<<<<<< HEAD
             <h1 className="font-bold px-10  text-[2rem] sm:text-5xl md:text-5xl lg:text-5xl xl:text-5xl ">
               MAIN PAGE
             </h1>
             <p className="font-medium text-base sm:text-base md:text-lg lg:text-xl text-center">
-=======
-            <h1
-              className="font-bold px-10  text-[2rem] sm:text-5xl md:text-5xl lg:text-5xl xl:text-5xl "
-              data-aos="fade-up"
-            >
-              MAIN PAGE
-            </h1>
-            <p
-              data-aos="fade-up"
-              className="font-medium text-base sm:text-base md:text-lg lg:text-xl text-center"
-            >
->>>>>>> 5870fa9fedbf89c43c842db52dfdc9f097d2501d
               Take a look at the main pages included in the eSports X Template.
             </p>
           </div>
@@ -422,11 +368,7 @@ const Main2 = () => {
             </Link>
           </div>
         </div>
-<<<<<<< HEAD
         <div className=" h-[20vh]  flex items-start">
-=======
-        <div data-aos="fade-up" className=" h-[20vh]  flex items-start">
->>>>>>> 5870fa9fedbf89c43c842db52dfdc9f097d2501d
           <Button text="BUY TEMPLATE" />
         </div>
       </div>
@@ -435,34 +377,17 @@ const Main2 = () => {
       <div className="h-auto w-[95vw] flex flex-col items-center justify-center">
         <div className="h-fit md:mb-40 mb-10  flex flex-col items-center justify-evenly w-full sm:w-[90vw] md:w-[85vw] lg:w-[80vw] xl:w-[70vw]">
           <div className=" text-center md:text-center pt-20 pb-10">
-<<<<<<< HEAD
             <h1 className="font-bold px-10  pb-2 text-[2.2rem] sm:text-4xl md:text-4xl  lg:text-[3rem] xl:text-[3.2rem] ">
               UTILITY PAGES
             </h1>
             <p className="font-medium text-[1.08rem] sm:text-sm md:text-base xl:text-base">
-=======
-            <h1
-              data-aos="fade-up"
-              className="font-bold px-10  pb-2 text-[2.2rem] sm:text-4xl md:text-4xl  lg:text-[3rem] xl:text-[3.2rem] "
-            >
-              UTILITY PAGES
-            </h1>
-            <p
-              data-aos="fade-up"
-              className="font-medium text-[1.08rem] sm:text-sm md:text-base xl:text-base"
-            >
->>>>>>> 5870fa9fedbf89c43c842db52dfdc9f097d2501d
               Take a look at the utility pages included in the eSports X
               Template.
             </p>
           </div>
 
           <div className=" w-[95vw] flex flex-wrap justify-center gap-10 ">
-<<<<<<< HEAD
             <div className="flex flex-col items-center border-2  ">
-=======
-            <div data-aos="fade-up" className="flex flex-col items-center  ">
->>>>>>> 5870fa9fedbf89c43c842db52dfdc9f097d2501d
               <img
                 className=" box w-[80vw] sm:w-[90vw] md:w-[40vw] lg:w-[40vw] xl:w-[40vw]  "
                 src={P404}
@@ -473,35 +398,19 @@ const Main2 = () => {
                   backgroundColor: "var(--secondary-1)",
                   fontWeight: "700",
                   fontFamily: "Chakra Petch, sans-serif",
-<<<<<<< HEAD
                 }}
                 className=" box3 nm
-=======
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-                className="  xl:text-[30px] xl:py-6 xl:px-[12vw] lg:px-[11vw] md:px-[9vw] sm:px-[33vw] px-[25vw] 
-       
-                 md:text-[25px] sm:text-[19px] text-[15px]  sm:py-6 py-6 
->>>>>>> 5870fa9fedbf89c43c842db52dfdc9f097d2501d
                  "
               >
                 404 NOT FOUND
               </p>
             </div>
-<<<<<<< HEAD
-            <div className="flex flex-col items-center border-2 h-fit w-auto ">
-              <img
-                className="box w-[80vw] sm:w-[90vw] md:w-[40vw] lg:w-[40vw] xl:w-[40vw] border-2"
-=======
             <div
               data-aos="fade-up"
               className="flex flex-col items-center h-fit w-auto "
             >
               <img
                 className="box w-[80vw] sm:w-[90vw] md:w-[40vw] lg:w-[40vw] xl:w-[40vw] "
->>>>>>> 5870fa9fedbf89c43c842db52dfdc9f097d2501d
                 src={Protected}
                 alt="Protected Page"
               />
@@ -511,13 +420,9 @@ const Main2 = () => {
                   fontWeight: "700",
                   fontFamily: "Chakra Petch, sans-serif",
                 }}
-<<<<<<< HEAD
-                className=" box3 nm
-=======
                 className="  xl:text-[30px] xl:py-6 xl:px-[10.5vw] lg:px-[10vw] md:px-[7vw] sm:px-[33vw] px-[25vw] 
        
                  md:text-[25px] sm:text-[19px] text-[14px]  sm:py-6 py-6 
->>>>>>> 5870fa9fedbf89c43c842db52dfdc9f097d2501d
                  "
               >
                 PROTECTED PAGE
@@ -525,11 +430,7 @@ const Main2 = () => {
             </div>
           </div>
 
-<<<<<<< HEAD
-          <div className="pt-10  ">
-=======
           <div data-aos="fade-up" className="pt-10  ">
->>>>>>> 5870fa9fedbf89c43c842db52dfdc9f097d2501d
             <Button text="BUY TEMPLATE" />
           </div>
         </div>
@@ -538,16 +439,6 @@ const Main2 = () => {
       {/* second to the last .................. */}
       <div className="three  w-full flex flex-col items-center justify-around space-y-10 ">
         <div className="h2 h-[50vh]  w-[95vw]">
-<<<<<<< HEAD
-          <h1 className=" text-3xl px-2 sm:text-3xl md:text-4xl xl:text-[3.2rem] font-bold pb-10 text-center  ">
-            THE ESPORTS X WEBFLOW TEMPLATE ALSO COMES WITH MORE SURPRISES...
-          </h1>
-        </div>
-
-        <div className="sec flex lg:flex-row md:flex-row flex-col items-center w-full sm:w-[90vw] md:w-[90vw]  xl:w-[90vw]  h-fit">
-          <div className=" flex items-center justify-center w-full ">
-            <div className="ohi  ">
-=======
           <h1
             data-aos="fade-up"
             className=" text-3xl px-2 sm:text-3xl md:text-4xl xl:text-[3.2rem] font-bold pb-10 text-center  "
@@ -558,7 +449,6 @@ const Main2 = () => {
         <div className="sec flex lg:flex-row md:flex-row flex-col items-center w-full sm:w-[90vw] md:w-[90vw]  xl:w-[90vw]  h-fit">
           <div className=" flex items-center justify-center w-full ">
             <div data-aos="fade-up" className="ohi  ">
->>>>>>> 5870fa9fedbf89c43c842db52dfdc9f097d2501d
               <h1 className="num text-xl sm:text-2xl md:text-3xl xl:text-3xl text-center sm:text-left ">
                 3 HEADERS AND FOOTERS
               </h1>
@@ -573,23 +463,12 @@ const Main2 = () => {
               <Button text=" BUY TEMPLATE" />
             </div>
           </div>
-<<<<<<< HEAD
-
-          <img className="ig0 " src={Aside} alt="" />
-        </div>
-
-        <div className="sec1 flex lg:flex-row md:flex-row flex-col items-center w-full sm:w-[90vw] md:w-[90vw]  xl:w-[90vw] h-fit">
-          <img className="ig0 " src={Aside2} alt="" />
-          <div className=" flex items-center justify-center w-full">
-            <div className="ohi md:py-5 md:pl-12">
-=======
           <img data-aos="fade-up" className="ig0 " src={Aside} alt="" />
         </div>
         <div className="sec1 flex lg:flex-row md:flex-row flex-col items-center w-full sm:w-[90vw] md:w-[90vw]  xl:w-[90vw] h-fit">
           <img data-aos="fade-up" className="ig0 " src={Aside2} alt="" />
           <div className=" flex items-center justify-center w-full">
             <div data-aos="fade-up" className="ohi md:py-5 md:pl-12">
->>>>>>> 5870fa9fedbf89c43c842db52dfdc9f097d2501d
               <h1 className="num text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center sm:text-left">
                 3 NOTIFICATION BARS
               </h1>
@@ -606,10 +485,6 @@ const Main2 = () => {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
-
-=======
->>>>>>> 5870fa9fedbf89c43c842db52dfdc9f097d2501d
         <div className="sec flex lg:flex-row md:flex-row flex-col items-center w-full sm:w-[90vw] md:w-[90vw]  xl:w-[90vw] h-fit">
           <div className="ini flex items-center justify-center w-full">
             <div data-aos="fade-up" className="ohi py-5 px-5">
@@ -629,22 +504,12 @@ const Main2 = () => {
               <Button text="   BUY TEMPLATE" />
             </div>
           </div>
-<<<<<<< HEAD
-          <img className="ig0 " src={Aside3} alt="" />
-        </div>
-
-        <div className="sec1 flex lg:flex-row md:flex-row flex-col items-center w-full sm:w-[90vw] md:w-[90vw]  xl:w-[90vw] h-fit">
-          <img className="ig0 " src={Aside4} alt="" />
-          <div className="ini flex items-center justify-center w-full">
-            <div className="ohi md:py-5 md:pl-12 ">
-=======
           <img data-aos="fade-up" className="ig0 " src={Aside3} alt="" />
         </div>
         <div className="sec1 flex lg:flex-row md:flex-row flex-col items-center w-full sm:w-[90vw] md:w-[90vw]  xl:w-[90vw] h-fit">
           <img data-aos="fade-up" className="ig0 " src={Aside4} alt="" />
           <div className="ini flex items-center justify-center w-full">
             <div data-aos="fade-up" className="ohi md:py-5 md:pl-12 ">
->>>>>>> 5870fa9fedbf89c43c842db52dfdc9f097d2501d
               <h1 className="num text-xl sm:text-2xl md:text-3xl lg:text-4xl text-centermd:text-center ">
                 3 NOTIFICATION BARS
               </h1>
@@ -660,10 +525,6 @@ const Main2 = () => {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
-
-=======
->>>>>>> 5870fa9fedbf89c43c842db52dfdc9f097d2501d
         <div className="sec flex lg:flex-row md:flex-row flex-col items-center w-full sm:w-[90vw] md:w-[90vw]  xl:w-[90vw] h-fit">
           <div className="ini flex items-center justify-center w-full">
             <div data-aos="fade-up" className="ohi py-5 px-5">
@@ -681,23 +542,15 @@ const Main2 = () => {
               <Button text="   BUY TEMPLATE" />
             </div>
           </div>
-<<<<<<< HEAD
-          <img className="ig0 " src={Aside5} alt="" />
-=======
           <img data-aos="fade-up" className="ig0 " src={Aside5} alt="" />
->>>>>>> 5870fa9fedbf89c43c842db52dfdc9f097d2501d
         </div>
       </div>
       {/* lastttttttttttttttttttttttttttttttt */}
       <div className=" xl:flex-row lg:flex-row flex-col flex items-center justify-between w-[95vw]  lg:h-[150vh] h-[235vh]">
-<<<<<<< HEAD
-        <div className="lg:w-[45vw] w-[90vw] h-auto flex flex-col justify-center items-center bg-blue-600 text-white ia mb-20 ">
-=======
         <div
           data-aos="fade-up"
           className="lg:w-[45vw] w-[90vw] h-auto flex flex-col justify-center items-center bg-blue-600 text-white ia mb-20 "
         >
->>>>>>> 5870fa9fedbf89c43c842db52dfdc9f097d2501d
           <div className=" flex flex-col items-start justify-around lg:w-[40vw] w-[80vw] pt-10 ">
             <img src={Logo4} alt="" />
             <h2 className=" xl:text-3xl lg:text-3xl text-xl md:font-[500] font-[800] py-6">
@@ -721,14 +574,10 @@ const Main2 = () => {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
-        <div className="lg:w-[45vw] w-[90vw] h-auto flex flex-col justify-center items-center bg-slate-50 text-black ia  mb-20">
-=======
         <div
           data-aos="fade-up"
           className="lg:w-[45vw] w-[90vw] h-auto flex flex-col justify-center items-center bg-slate-50 text-black ia  mb-20"
         >
->>>>>>> 5870fa9fedbf89c43c842db52dfdc9f097d2501d
           <div className=" flex flex-col items-start justify-around lg:w-[40vw] w-[80vw] py-12">
             <img
               src={Logo3}
