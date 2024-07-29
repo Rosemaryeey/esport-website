@@ -37,7 +37,7 @@ const Main2 = () => {
     Aos.init({ duration: 600, delay: 200 });
   }, []);
   return (
-    <main className=" flex items-center flex-col w-[100%]">
+    <main className=" flex items-center flex-col w-[100%] h-fit ">
       {/* slide one  --------- */}
       <div className="flex items-center justify-center flex-col md:w-[100%] w-[100%] xl:h-[100vh] lg:h-[100vh] sm:h-fit h-fit   ">
         <div className="xl:w-[90vw] w-[95vw] h-[90vh] flex items-end justify-center   ">
@@ -62,7 +62,10 @@ const Main2 = () => {
               >
                 <span className="xl:block lg:flex items-center justify-center md:block  ">
                   ESPORTS
-                  <span className=" xl:inline lg:inline md:inline sm:block inline "> X</span>
+                  <span className=" xl:inline lg:inline md:inline sm:block inline ">
+                    {" "}
+                    X
+                  </span>
                 </span>
                 <span> WEBFLOW TEMPLATE</span>
               </h1>
@@ -98,9 +101,12 @@ const Main2 = () => {
       </div>
 
       {/* ------------slide two */}
-      <div className="flex items-center justify-evenly  two  w-[100%] xl:h-[120vh]  sm:h-[80vh] h-[100vh] border-2">
+      <div className="flex items-center justify-evenly  w-[100%] xl:h-[75vh]  sm:h-[80vh] h-[50vh] ">
         <ScrollAnimatedBox />
       </div>
+      {/* <div className="flex items-center justify-evenly  w-[100%] h-[75vh] ">
+        <ScrollAnimatedBox />
+      </div> */}
 
       {/* ------------slide three */}
       <div
@@ -113,13 +119,14 @@ const Main2 = () => {
         }}
         className=" h-fit md: flex  flex-wrap lg:space-around    space-y-10        "
       >
-        <div className="xl:h-[50vh] md:h-[] h-[50vh]   flex  md:items-center items-end justify-center ">
-          <div className=" xl:h-[20vh]   h-[20vh] flex flex-col items-center justify-around ">
+        <div className="xl:h-[80vh] md:h-[] h-[30vh]   flex  md:items-end items-end justify-center ">
+          <div className=" xl:h-[50vh]   h-[20vh] flex flex-col items-center justify-end ">
             <h1
               style={{
                 textAlign: "center",
                 lineHeight: "1",
               }}
+              data-aos="fade-up"
               className=" xl:w-[95vw] w-[]
             xl:text-[3.5rem] lg:text-[3rem] md:text-[3rem] sm:text-[2.2rem] text-[2.2rem]  md:px-0 px-2 md:mb-0 mb-2
              font-bold   "
@@ -127,6 +134,7 @@ const Main2 = () => {
               WHAT IS INCLUDED IN ESPORTS X
             </h1>
             <p
+              data-aos="fade-up"
               style={{
                 textAlign: "center",
               }}
@@ -154,9 +162,9 @@ const Main2 = () => {
   "
           data-aos="fade-up"
         >
-          <div className="">
+          <div className="" data-aos="fade-up">
             <img
-              className="box xl:w-[30vw] lg:w-[30vw] w-[90vw] lg:object-contain  object-fill lg:h-fit h-[90vh] sm:object-contain"
+              className="box xl:w-[30vw] lg:w-[30vw] w-[90vw] lg:object-contain  object-fill lg:h-fit h-[70vh] sm:object-contain"
               src={Box3}
               alt=""
             />
@@ -168,11 +176,11 @@ const Main2 = () => {
                 justifyContent: "center",
               }}
               className="
-        xl:font-[700] xl:text-[21px] xl:py-6 xl:px-0
+                 xl:font-[700] xl:text-[21px] xl:py-6 xl:px-0
        
-        md:font-[700] font-[700] md:text-[25px] text-[20px]  sm:py-6 py-6 sm:px-0
+                 md:font-[700] font-[700] md:text-[25px] text-[20px]  sm:py-6 py-6 sm:px-0
         
-      "
+                 "
             >
               <span
                 style={{ color: "var(--primary-1)" }}
@@ -180,12 +188,17 @@ const Main2 = () => {
               >
                 15+
               </span>
-              <span style={{ color: "var(--secondary-1)" }}>PAGES</span>
+              <span
+                className=" xl:text-[var(--secondary-1)] md:text-white/60"
+                style={{}}
+              >
+                PAGES
+              </span>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-up">
             <img
-              className="box xl:w-[30vw] lg:w-[30vw] w-[90vw] lg:object-contain object-fill sm:object-contain lg:h-fit h-[90vh]"
+              className="box xl:w-[30vw] lg:w-[30vw] w-[90vw] lg:object-contain object-fill sm:object-contain lg:h-fit h-[70vh]"
               src={Box2}
               alt=""
             />
@@ -205,18 +218,25 @@ const Main2 = () => {
       "
             >
               <span
-                style={{ color: "var(--primary-1)" }}
+                style={{
+                  color: "var(--primary-1)",
+                }}
                 className="xl:pr-2 lg:pr-2 md:pr-1 sm:pr-1 xs:pr-1"
               >
                 35+
               </span>
-              <span style={{ color: "var(--secondary-1)" }}>SECTIONS</span>
+              <span
+                className=" xl:text-[var(--secondary-1)] md:text-white/60"
+                style={{}}
+              >
+                SECTIONS
+              </span>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-up">
             <div>
               <img
-                className="box xl:w-[30vw] lg:w-[30vw] w-[90vw] lg:object-contain object-fill sm:object-contain lg:h-fit h-[90vh]"
+                className="box xl:w-[30vw] lg:w-[30vw] w-[90vw] lg:object-contain object-fill sm:object-contain lg:h-fit h-[70vh]"
                 src={Box1}
                 alt=""
               />
@@ -240,7 +260,12 @@ const Main2 = () => {
               >
                 25+
               </span>
-              <span style={{ color: "var(--secondary-1)" }}>
+              <span
+                style={{
+                  color: "",
+                }}
+                className=" xl:text-[var(--secondary-1)] md:text-white/60"
+              >
                 STYLE<span className="px-2">&</span>SYMBOLS
               </span>
             </div>
@@ -315,10 +340,16 @@ const Main2 = () => {
           className=" xl:h-[40vh] lg:h-[20vh] md:h-[35vh] sm:h-[40vh] h-[30vh] "
         >
           <div className="  flex flex-col items-center justify-around h-[20vh]   py-3">
-            <h1 className="font-bold px-10  text-[2rem] sm:text-5xl md:text-5xl lg:text-5xl xl:text-5xl ">
+            <h1
+              data-aos="fade-up"
+              className="font-bold px-10  text-[2rem] sm:text-5xl md:text-5xl lg:text-5xl xl:text-5xl "
+            >
               MAIN PAGE
             </h1>
-            <p className="font-medium text-base sm:text-base md:text-lg lg:text-xl text-center">
+            <p
+              data-aos="fade-up"
+              className="font-medium text-base sm:text-base md:text-lg lg:text-xl text-center"
+            >
               Take a look at the main pages included in the eSports X Template.
             </p>
           </div>
@@ -368,7 +399,7 @@ const Main2 = () => {
             </Link>
           </div>
         </div>
-        <div className=" h-[20vh]  flex items-start">
+        <div data-aos="fade-up" className=" h-[20vh]  flex items-start">
           <Button text="BUY TEMPLATE" />
         </div>
       </div>
@@ -377,17 +408,26 @@ const Main2 = () => {
       <div className="h-auto w-[95vw] flex flex-col items-center justify-center">
         <div className="h-fit md:mb-40 mb-10  flex flex-col items-center justify-evenly w-full sm:w-[90vw] md:w-[85vw] lg:w-[80vw] xl:w-[70vw]">
           <div className=" text-center md:text-center pt-20 pb-10">
-            <h1 className="font-bold px-10  pb-2 text-[2.2rem] sm:text-4xl md:text-4xl  lg:text-[3rem] xl:text-[3.2rem] ">
+            <h1
+              data-aos="fade-up"
+              className="font-bold px-10  pb-2 text-[2.2rem] sm:text-4xl md:text-4xl  lg:text-[3rem] xl:text-[3.2rem] "
+            >
               UTILITY PAGES
             </h1>
-            <p className="font-medium text-[1.08rem] sm:text-sm md:text-base xl:text-base">
+            <p
+              data-aos="fade-up"
+              className="font-medium text-[1.08rem] sm:text-sm md:text-base xl:text-base"
+            >
               Take a look at the utility pages included in the eSports X
               Template.
             </p>
           </div>
 
           <div className=" w-[95vw] flex flex-wrap justify-center gap-10 ">
-            <div className="flex flex-col items-center border-2  ">
+            <div
+              data-aos="fade-up"
+              className="flex flex-col items-center   "
+            >
               <img
                 className=" box w-[80vw] sm:w-[90vw] md:w-[40vw] lg:w-[40vw] xl:w-[40vw]  "
                 src={P404}
@@ -437,7 +477,7 @@ const Main2 = () => {
       </div>
 
       {/* second to the last .................. */}
-      <div className="three  w-full flex flex-col items-center justify-around space-y-10 ">
+      <div className="three  w-full flex flex-col items-center justify-around space-y-10 h-fit pb-20 ">
         <div className="h2 h-[50vh]  w-[95vw]">
           <h1
             data-aos="fade-up"
@@ -546,7 +586,7 @@ const Main2 = () => {
         </div>
       </div>
       {/* lastttttttttttttttttttttttttttttttt */}
-      <div className=" xl:flex-row lg:flex-row flex-col flex items-center justify-between w-[95vw]  lg:h-[150vh] h-[235vh]">
+      <div className=" xl:flex-row lg:flex-row flex-col flex items-center justify-between w-[95vw]  lg:h-[150vh] h-[235vh] relative bottom-5">
         <div
           data-aos="fade-up"
           className="lg:w-[45vw] w-[90vw] h-auto flex flex-col justify-center items-center bg-blue-600 text-white ia mb-20 "
