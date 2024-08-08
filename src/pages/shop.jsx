@@ -24,6 +24,7 @@ import Cap1 from "../assets/cap1.png";
 import Cap2 from "../assets/cap2.png";
 import Bag1 from "../assets/bag1.png";
 import Bag2 from "../assets/bag2.png";
+import { FaTwitch, FaInstagram } from "react-icons/fa";
 
 const Shop = () => {
   useEffect(() => {
@@ -42,7 +43,7 @@ const Shop = () => {
     opacity-0 hover:opacity-100 transition-opacity duration-500
     "
       >
-        {/* <FaInstagram className="text-[85px] text-white" /> */}
+        <FaInstagram className="text-[85px] text-white" />
       </div>
     </div>
   );
@@ -277,7 +278,7 @@ const Shop = () => {
             </div>
             <div
               data-aos="zoom-in"
-              className="   w-[20rem] sm:w-[18rem] md:w-[23rem] lg:w-[24vw] xl:w-[24.5vw]  x relative lg:bottom-0 bottom-2 flex items-center justify-center"
+              className="   w-[20rem] sm:w-[18rem] md:w-[23rem] lg:w-[24vw] xl:w-[24.5vw]  x relative lg:bottom-0 bottom-2 flex items-center justify-center sm:relative sm:right-0 right-2"
             >
               <Instagram
                 image={Music4}
@@ -297,7 +298,7 @@ const Shop = () => {
             </div>
             <div
               data-aos="zoom-in"
-              className="  w-[20rem] sm:w-[18rem] md:w-[23rem] lg:w-[24vw] xl:w-[24.5vw]  x"
+              className="  w-[20rem] sm:w-[18rem] md:w-[23rem] lg:w-[24vw] xl:w-[24.5vw]  x sm:relative sm:right-0 right-2"
             >
               <Instagram
                 image={Music3}
@@ -318,7 +319,7 @@ const Shop = () => {
 
             <div
               data-aos="zoom-in"
-              className="  w-[20rem] sm:w-[18rem]  md:w-[23rem] lg:w-[24vw] xl:w-[24.5vw] x"
+              className="  w-[20rem] sm:w-[18rem]  md:w-[23rem] lg:w-[24vw] xl:w-[24.5vw] x  sm:relative sm:right-0 right-2 "
             >
               <Instagram
                 image={Music4}

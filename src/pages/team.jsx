@@ -3,6 +3,7 @@ import Button from "../components/button";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+
 import Music from "../assets/music.svg";
 import Music2 from "../assets/music2.svg";
 import Music3 from "../assets/music3.jpg";
@@ -122,8 +123,7 @@ const Team = () => {
 
       <div className=" flex flex-col items-center justify-evenly w-[95vw] h-fit space-y-20">
         <div className=" w-[90vw] md:flex-row flex-col flex items-center justify-between">
-          <h2 data-aos=" fade-up" 
-          className="font-bold  md:text-6xl text-4xl">
+          <h2 data-aos=" fade-up" className="font-bold  md:text-6xl text-4xl md:pb-0 pb-3">
             DRAGON TEAM
           </h2>
           <Button text="Join Our Team" />
@@ -172,7 +172,7 @@ const Team = () => {
           </div>
           <div
             data-aos="zoom-in"
-            className="   w-[20rem] sm:w-[18rem] md:w-[23rem] lg:w-[24vw] xl:w-[24.5vw]  x relative lg:bottom-0 bottom-2 flex items-center justify-center"
+            className=" sm:relative sm:right-0 right-2  w-[20rem] sm:w-[18rem] md:w-[23rem] lg:w-[24vw] xl:w-[24.5vw]  x relative lg:bottom-0 bottom-2 flex items-center justify-center"
           >
             <Instagram image={Music4} className="w-full h-full object-cover" />
             {/* <img
@@ -189,7 +189,7 @@ const Team = () => {
           </div>
           <div
             data-aos="zoom-in"
-            className="  w-[20rem] sm:w-[18rem] md:w-[23rem] lg:w-[24vw] xl:w-[24.5vw]  x"
+            className="sm:relative sm:right-0 right-2  w-[20rem] sm:w-[18rem] md:w-[23rem] lg:w-[24vw] xl:w-[24.5vw]  x"
           >
             <Instagram image={Music3} className="w-full h-full object-cover" />
             {/* <img
@@ -207,7 +207,7 @@ const Team = () => {
 
           <div
             data-aos="zoom-in"
-            className="  w-[20rem] sm:w-[18rem]  md:w-[23rem] lg:w-[24vw] xl:w-[24.5vw] x"
+            className=" sm:relative sm:right-0 right-2 w-[20rem] sm:w-[18rem]  md:w-[23rem] lg:w-[24vw] xl:w-[24.5vw] x"
           >
             <Instagram image={Music4} className="w-full h-full object-cover" />
             {/* <img

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Foot2 from "../assets/foot2.svg";
 import Foot2ii from "../assets/foot2ii.svg";
 import Foot2iii from "../assets/foot2iii.svg";
+import { FaTwitch, FaInstagram } from "react-icons/fa";
 import Foot2iv from "../assets/foot2iv.svg";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -33,7 +34,7 @@ const Partner = () => {
     opacity-0 hover:opacity-100 transition-opacity duration-500
     "
       >
-        {/* <FaInstagram className="text-[85px] text-white" /> */}
+        <FaInstagram className="text-[85px] text-white" />
       </div>
     </div>
   );
@@ -67,19 +68,19 @@ const Partner = () => {
                 className="w-24 md:w-36 lg:w-48"
               />
               <img
-               data-aos="zoom-in"
+                data-aos="zoom-in"
                 src={Footiii}
                 alt="Footiii"
                 className="w-24 md:w-36 lg:w-48"
               />
               <img
-               data-aos="zoom-in"
+                data-aos="zoom-in"
                 src={Foot}
                 alt="Foot"
                 className="w-24 md:w-36 lg:w-48"
               />
               <img
-               data-aos="zoom-in"
+                data-aos="zoom-in"
                 src={Footiv}
                 alt="Footiv"
                 className="w-24 md:w-36 lg:w-48"
@@ -149,7 +150,7 @@ const Partner = () => {
             </div>
             <div
               data-aos="zoom-in"
-              className="   w-[20rem] sm:w-[18rem] md:w-[23rem] lg:w-[24vw] xl:w-[24.5vw]  x relative lg:bottom-0 bottom-2 flex items-center justify-center"
+              className=" sm:relative sm:right-0 right-2  w-[20rem] sm:w-[18rem] md:w-[23rem] lg:w-[24vw] xl:w-[24.5vw]  x relative lg:bottom-0 bottom-2 flex items-center justify-center"
             >
               <Instagram
                 image={Music4}
@@ -169,7 +170,7 @@ const Partner = () => {
             </div>
             <div
               data-aos="zoom-in"
-              className="  w-[20rem] sm:w-[18rem] md:w-[23rem] lg:w-[24vw] xl:w-[24.5vw]  x"
+              className="  sm:relative sm:right-0 right-2 w-[20rem] sm:w-[18rem] md:w-[23rem] lg:w-[24vw] xl:w-[24.5vw]  x"
             >
               <Instagram
                 image={Music3}
@@ -190,7 +191,7 @@ const Partner = () => {
 
             <div
               data-aos="zoom-in"
-              className="  w-[20rem] sm:w-[18rem]  md:w-[23rem] lg:w-[24vw] xl:w-[24.5vw] x"
+              className=" sm:relative sm:right-0 right-2  w-[20rem] sm:w-[18rem]  md:w-[23rem] lg:w-[24vw] xl:w-[24.5vw] x"
             >
               <Instagram
                 image={Music4}
