@@ -58,23 +58,23 @@ function Header2() {
       </div>
       <div
         className={`flex top-[18%] md:h-[17vh] w-screen fixed h-screen md:static 
-         flex-col md:flex-row ${menu ? "hidden lg:flex" : "flex"}
+         flex-col md:flex-row ${menu ? "hidden md:flex" : "flex"}
           justify-evenly md:items-center gap-6 md:gap-2 overflow-y-auto md:overflow-hidden
           items-start md:px-fit px-6 md:py-0 md:z-0 z-50 lg:w-[42vw]`}
       >
         <div
           className="md:flex-row flex flex-col gap-7 md:gap-0 md:w-screen 
-          md:justify-evenly md:h-fit h-[70vh] border-white"
+          md:justify-evenly md:h-fit h-[70vh] border-white font-extrabold"
         >
           <Nav1 text="HOME" source="/home" />
           <Nav1 text="ABOUT" source="/about" />
-          <Nav1 text="TEAM" source="/" />
+          <Nav1 text="TEAM" source="/team" />
           <Nav1 text="PARTNER" source="/partner" />
           <Nav1 text="SHOP" source="/shop" />
           <div className="flex justify-between w-[31vw] md:w-fit items-center">
-            <Nav1 text="PAGES" source="/pages" />
+            <Nav1 text="PAGES" source="/" />
             <span
-              className="text-2xl md:hidden hover:text-[#f32c46]"
+              className="text-2xl  md:hidden hover:text-[#f32c46]"
               onClick={() => {
                 setDisplay(!display);
                 setHeight(!height);
@@ -97,7 +97,7 @@ function Header2() {
         </div>
         <div
           onClick={() => setMenu(!menu)}
-          className="button-primary cursor-pointer lg:hidden bg-[#f32c46] text-5xl"
+          className="button-primary cursor-pointer md:hidden bg-[#f32c46] text-5xl "
         >
           <HiMenu />
         </div>

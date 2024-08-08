@@ -1,7 +1,15 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
-const Button = ({ text }) => {
-  const [hover, setHover] = useState(false);
+
+
+
+  const Button = ({ text }) => {
+    const [hover, setHover] = useState(false);
+    useEffect(() => {
+      Aos.init({ duration: 600, delay: 300 });
+    }, []);
 
   return (
     <button
@@ -22,6 +30,7 @@ const Button = ({ text }) => {
       }}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
+      data-aos="fade-up"
       className=" md:text-[20px] sm:text-[17px] text-[16px] border-2 border-[#f32c46] bg-[#f32c46] font-bold 
       xl:py-[23px]  md:py-[25px] sm:py-[20px] py-[19px] sm:px-[80px] px-[70px]  
       xl:px-[48px]   md:px-[48px]  "

@@ -72,7 +72,7 @@ const Home = () => {
 
                 <Link
                   to=""
-                  className="btn border-2  md:mt-0 mt-5  xl:ml-6 md:ml-10 ml-0 font-bold"
+                  className="btn  border-2  md:mt-0 mt-5  xl:ml-6 md:ml-10 ml-0 font-bold"
                 >
                   MEET THE TEAM
                 </Link>
@@ -557,7 +557,7 @@ const Home = () => {
             <h2 className="md:text-5xl text-4xl font-bold mb-12 ">
               FEATURED PRODUCTS
             </h2>
-            <div className="flex flex-wrap justify-around items-center w-[95vw] border-2  ">
+            <div className="flex flex-wrap justify-around items-center w-[95vw]   ">
               <div
                 data-aos="zoom-in"
                 className=" sh  rounded-lg shadow-lg xl:max-w-[18rem] lg:max-w-[18rem] md:max-w-[18rem] sm:max-w-[15rem] max-w-[30rem] mx-3 relative"
@@ -621,7 +621,7 @@ const Home = () => {
                   <span className="tw">$59.99 USD</span>
                 </h3>
               </div>
-              <div className=" sh rounded-lg shadow-lg xl:max-w-[18rem] lg:max-w-[18rem] md:max-w-[18rem] sm:max-w-[15rem] max-w-[30rem] border-2 mx-3">
+              <div className=" sh rounded-lg shadow-lg xl:max-w-[18rem] lg:max-w-[18rem] md:max-w-[18rem] sm:max-w-[15rem] max-w-[30rem]  mx-3">
                 <img
                   data-aos="zoom-in"
                   src={Polo4}
@@ -645,8 +645,8 @@ const Home = () => {
           <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold">
             FOLLOW US ON <span className="text-[#f32c46]">INSTAGRAM</span>
           </h3>
-          <div className="flex flex-wrap justify-center items-center   pt-10 lg:space-y-0 space-y-5  lg:space-x-0 space-x-5 border-2">
-            <div className=" border-2 w-[20rem] sm:w-[18rem] md:w-[23rem] lg:w-[24vw] xl:w-[24.5vw]  x">
+          <div className="flex flex-wrap justify-center items-center   pt-10 lg:space-y-0 space-y-5  lg:space-x-0 space-x-5 ">
+            <div className="  w-[20rem] sm:w-[18rem] md:w-[23rem] lg:w-[24vw] xl:w-[24.5vw]  x">
               <Instagram
                 image={Music3}
                 className="w-full h-full object-cover"
@@ -660,7 +660,7 @@ const Home = () => {
                 <img src="" alt="" />
               </div>
             </div>
-            <div className=" border-2  w-[20rem] sm:w-[18rem] md:w-[23rem] lg:w-[24vw] xl:w-[24.5vw]  x relative lg:bottom-0 bottom-2 flex items-center justify-center">
+            <div className="   w-[20rem] sm:w-[18rem] md:w-[23rem] lg:w-[24vw] xl:w-[24.5vw]  x relative lg:bottom-0 bottom-2 flex items-center justify-center">
               <Instagram
                 image={Music4}
                 className="w-full h-full object-cover"
@@ -674,7 +674,7 @@ const Home = () => {
                 <img src="" alt="" />
               </div>
             </div>
-            <div className=" border-2 w-[20rem] sm:w-[18rem] md:w-[23rem] lg:w-[24vw] xl:w-[24.5vw]  x">
+            <div className="  w-[20rem] sm:w-[18rem] md:w-[23rem] lg:w-[24vw] xl:w-[24.5vw]  x">
               <Instagram
                 image={Music3}
                 className="w-full h-full object-cover"
@@ -689,7 +689,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className=" border-2 w-[20rem] sm:w-[18rem]  md:w-[23rem] lg:w-[24vw] xl:w-[24.5vw] x">
+            <div className="  w-[20rem] sm:w-[18rem]  md:w-[23rem] lg:w-[24vw] xl:w-[24.5vw] x">
               <Instagram
                 image={Music4}
                 className="w-full h-full object-cover"
