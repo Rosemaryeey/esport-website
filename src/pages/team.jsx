@@ -121,7 +121,7 @@ const Team = () => {
       {/* meet the team............ */}
 
       <div className=" flex flex-col items-center justify-evenly w-[95vw] h-fit space-y-20">
-        <div className=" w-[90vw] flex items-center justify-between">
+        <div className=" w-[90vw] md:flex-row flex-col flex items-center justify-between">
           <h2 data-aos=" fade-up" 
           className="font-bold  md:text-6xl text-4xl">
             DRAGON TEAM
