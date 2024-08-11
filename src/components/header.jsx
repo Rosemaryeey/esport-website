@@ -58,13 +58,13 @@ function Header2() {
       </div>
       <div
         className={`flex top-[18%] md:h-[17vh] w-screen fixed h-screen md:static 
-         flex-col md:flex-row ${menu ? "hidden md:flex" : "flex"}
-          justify-evenly md:items-center gap-6 md:gap-2 overflow-y-auto md:overflow-hidden
-          items-start md:px-fit px-6 md:py-0 md:z-0 z-50 lg:w-[42vw]`}
+     flex-col md:flex-row ${menu ? "hidden md:flex" : "flex"}
+      justify-evenly md:items-center gap-6 md:gap-2 overflow-y-auto md:overflow-hidden
+      items-start md:px-fit px-6 md:py-0 lg:w-[42vw] md:bg-transparent bg-black z-50`}
       >
         <div
           className="md:flex-row flex flex-col gap-7 md:gap-0 md:w-screen 
-          md:justify-evenly md:h-fit h-[70vh] border-white font-extrabold"
+    md:justify-evenly md:h-fit h-[70vh] border-white font-extrabold"
         >
           <Nav1 text="HOME" source="/home" />
           <Nav1 text="ABOUT" source="/about" />
@@ -88,6 +88,7 @@ function Header2() {
           {/* Mobile Menu Content */}
         </div>
       </div>
+
       <div className="flex justify-between items-center">
         <p className="md:w-[7vw] w-[26vw] cursor-pointer">CART(0)</p>
         <div className="hidden md:flex">
