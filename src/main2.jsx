@@ -87,10 +87,11 @@ const Main2 = () => {
        
         "
               >
+                
                 <Button text="Buy Template " />
                 <Link
                   to=""
-                  className="btn border-2  md:mt-0 mt-5  xl:ml-6 md:ml-10 ml-0 font-bold"
+                  className="btn border-2  md:mt-0 mt-5  xl:ml-6 md:ml-10 ml-0 font-bold "
                 >
                   EXPLORE PAGES
                 </Link>

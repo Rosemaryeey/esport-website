@@ -35,7 +35,10 @@ const Results = ({ num, text }) => (
   </div>
 );
 const Icons = ({ icon }) => (
-  <div className="icon md:w-[2.7vw] w-[8vw] bg-[var(--primary-1)] h-[6vh] flex justify-center items-center">
+  <div
+    data-aos="zoom-in"
+    className="icon md:w-[2.7vw] w-[8vw] bg-[var(--primary-1)] h-[6vh] flex justify-center items-center"
+  >
     <p className="text-2xl">{icon}</p>
   </div>
 );
@@ -235,7 +238,7 @@ const About = ({ text }) => {
       </section>
 
       {/* second slid................... */}
-      <section className="flex md:flex-row flex-col justify-center items-center  w-[100%] md:h-[169vh] h-[250vh] ">
+      <section className="flex  md:flex-row flex-col justify-center items-center  w-[100%] md:h-[169vh] h-[250vh] ">
         <div className=" h-[40vh] md:hidden flex " />
         <div className="md:w-[50vw] w-[95vw] relative  md:flex hidden">
           <div
@@ -248,7 +251,7 @@ const About = ({ text }) => {
             className="w-[43vw]  absolute z-30 bottom-[7%]  left-[-2%]"
           />
         </div>
-        <div className="sm:w-[95vw]  h-[60vh] relative  ">
+        <div className="sm:w-[95vw]  h-[60vh] relative md:hidden flex  ">
           <div
             data-aos="zoom-in"
             className="w-[90vw] h-[80vh] bg-[#11161e] "
@@ -371,13 +374,13 @@ const About = ({ text }) => {
           <div>
             <p
               data-aos="fade-up"
-              className="text-[8vh] md:w-[36vw] w-[90vw] md:h-[13vh] h-[20vh]  md:text-left text-center font-bold"
+              className="text-[8vh] md:w-[36vw] w-[90vw] h-[13vh]   md:text-left text-center font-bold"
             >
               OUR TEAM
             </p>
             <p
               data-aos="fade-up"
-              className="text-lg md:w-[43vw] w-[90vw] md:text-left text-center text-gray-300 h-[15vh]"
+              className="text-lg md:w-[43vw] w-[90vw] md:text-left text-center text-gray-300 md:h-[15vh] h-[18vh]"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. At at
               gravida platea congue. Gravida viverra id ac dui blandit in sed.
