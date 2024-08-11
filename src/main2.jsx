@@ -237,7 +237,7 @@ const Main2 = () => {
           <div data-aos="fade-up">
             <div>
               <img
-                className="box xl:w-[30vw] lg:w-[30vw] w-[90vw] lg:object-contain object-fill sm:object-contain lg:h-fit h-[70vh]"
+                className="box xl:w-[30vw] lg:w-[30vw] w-[90vw] lg:object-contain object-contain sm:object-contain lg:h-fit h-[70vh]"
                 src={Box1}
                 alt=""
               />
@@ -583,7 +583,7 @@ const Main2 = () => {
               <Button text="   BUY TEMPLATE" />
             </div>
           </div>
-          <img data-aos="fade-up" className="ig0 " src={Aside5} alt="" />
+          <img data-aos="fade-up" className="ig0 object-cover " src={Aside5} alt="" />
         </div>
       </div>
       {/* lastttttttttttttttttttttttttttttttt */}
